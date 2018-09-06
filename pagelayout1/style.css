@@ -1,0 +1,16 @@
+header, 
+div.article, 
+div.section,
+footer {
+   border: 1px solid black;
+   text-align: center;
+}
+
+ul li {
+    list-style: none;
+    display: inline-block;
+    border: 1px solid red;
+    padding: 0 5px;
+}
+
+  

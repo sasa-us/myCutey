@@ -40,24 +40,24 @@ function createCards(imageArray) {
     */
    totalArray.forEach( image=> {
        console.log('imgae is:', image);
-        const cardContainer = document.createElement('DIV');
+        const cardContainer = document.createElement('div');
         cardContainer.classList.add('cardContainer');
 
-        const card = document.createElement('DIV');
+        const card = document.createElement('div');
         card.classList.add('card');
 
-        const front = document.createElement('DIV');
+        const front = document.createElement('div');
         front.classList.add('front');
         front.style.backgroundImage = `url(imgaes/${image})`;
         
-        const back = document.createElement('DIV');
+        const back = document.createElement('div');
         back.classList.add('back');
         
         card.appendChild(front);
         card.appendChild(back);
         cardContainer.appendChild(card);
         
-        document.querySelector('#game').appendChild(cardContainer);
+        document.getElementById('game').appendChild(cardContainer);
     });
     
 
